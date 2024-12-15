@@ -1,0 +1,16 @@
+.vs/
+
+venv/
+__pycache__/
+
+
+node_modules/
+
+*.log
+
+.vscode/
+.idea/
+.DS_Store
+
+*.tmp
+*.swp

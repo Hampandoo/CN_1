@@ -1,0 +1,10 @@
+{
+  "base_news_prompt": {
+    "name": "base_news",
+    "task": "Analyze and rewrite only main idea and main facts.",
+    "input_text": "{input_text}",
+    "analysis_requirements": "Summarize key information, Determine emotional tone of the article, Identify the main points or facts and put it under Analize title.",
+    "rewrite_requirements": "neutral tone, remove bias, keep clarity",
+    "tags": "Add list of relevant keywords or phrases on your own point."
+  }
+}

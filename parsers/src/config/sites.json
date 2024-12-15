@@ -1,0 +1,12 @@
+{
+  "interfax": {
+    "url": "https://en.interfax.com.ua",
+    "parseUrl": "/news/latest.html",
+    "parserName": "interfax"
+  },
+  "gordonua": {
+    "url": "https://english.gordonua.com",
+    "parseUrl": "/ukr/news.html",
+    "parserName": "gordonua"
+  }
+}

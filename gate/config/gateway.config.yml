@@ -1,0 +1,74 @@
+http:
+  port: 8080
+admin:
+  port: 9876
+  host: localhost
+apiEndpoints:
+  api:
+    host: localhost
+    paths: '/ip'
+  parse:
+    host: '*'
+    paths: ['/parse', '/get_latest_news']
+  generate:
+    host: '*'
+    paths: ['/generate', '/generate-content', '/get-generated-latest-news']
+serviceEndpoints:
+  httpbin:
+    url: 'https://httpbin.org'
+  parserService:
+    url: 'http://localhost:8081'
+  aiService:
+    url: 'http://localhost:8082'
+policies:
+  - basic-auth
+  - cors
+  - expression
+  - key-auth
+  - log
+  - oauth2
+  - proxy
+  - rate-limit
+pipelines:
+  default:
+    apiEndpoints:
+      - api
+    policies:
+      - proxy:
+          - action:
+              serviceEndpoint: httpbin 
+              changeOrigin: true
+  parsePipeline:
+    apiEndpoints:
+      - parse
+      - get_latest_news
+    policies:
+      - cors:
+          - action:
+              origin: '*'
+              methods:
+                - GET
+                - POST
+              allowedHeaders:
+                - Content-Type
+      - proxy:
+          - action:
+              serviceEndpoint: parserService
+
+  generatePipeline:
+    apiEndpoints:
+      - generate-content
+      - generate
+      - get-generated-latest-news
+    policies:
+      - cors:
+          - action:
+              origin: '*'
+              methods:
+                - GET
+                - POST
+              allowedHeaders:
+                - Content-Type
+      - proxy:
+          - action:
+              serviceEndpoint: aiService

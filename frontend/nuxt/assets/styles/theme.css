@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #0d1b2a;
+  --color-secondary: #1b263b;
+  --color-accent: #d4af37;
+  --color-background: #f8f5f2;
+  --color-text-primary: #333333;
+  --color-text-secondary: #555555;
+  --color-border: #cccccc;
+
+  --color-green: #014421;
+  --color-green-light: #2a5934; 
+
+  --color-heading: #8b0000;
+  --color-highlight: #bcbcbc;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+}

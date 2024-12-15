@@ -1,0 +1,17 @@
+{
+  "name": ".",
+  "description": "Express Gateway Instance Bootstraped from Command Line",
+  "repository": {},
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "express-gateway": "^1.16.11",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "bullmq": "^5.29.1",
+    "express": "^4.21.1"
+  }
+}
