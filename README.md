@@ -1,4 +1,4 @@
-﻿# // CN version 0.01
+﻿# // CN version 0.0.1
 
 # ClearNews: Pure News Without Manipulation
 
