@@ -56,7 +56,6 @@ ClearNews is open to collaboration and growth. We are seeking:
 
 Want to learn more or discuss collaboration? Reach out to us:
 
-- **Email**: [clearnews@example.com](mailto:clearnews@example.com)
-- **LinkedIn**: [linkedin.com/clearnews](https://linkedin.com/clearnews)
+- **Email**: [storyoftranquility@gmail.com](mailto:storyoftranquility@gmain.com)
 
 Join the revolution of transparent information! ✨
