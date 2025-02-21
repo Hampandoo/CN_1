@@ -1,5 +1,3 @@
-conda deactivate
-
 cd content_generators
 source generator_venv/bin/activate
 uvicorn server:app --reload --port 8001
