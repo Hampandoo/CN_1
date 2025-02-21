@@ -1,0 +1,8 @@
+{
+  "base_news_prompt": {
+    "task": "Rewrite the main idea of the text briefly, without emotions and objectively, so that the presented information is perceived neutrally and without implications as a Clear News",
+    "analysis_requirements": "Analyze the text for the possibility of deliberately embedded psychological pressure. Determine whether the text aims to influence a person to change or form a specific opinion regarding the actions or organizations described in it",
+    "tags_requirements": "Add tags related to the persons, organizations, etc., mentioned in the text",
+    "facts_requirements": "Summarize the key facts presented in the text concisely"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "base_news_prompt": {
+    "task": "Rewrite short main idea as a Clear News",
+    "analysis_requirements": "No emotions",
+    "rewrite_requirements": "Rewrite short main idea",
+    "tags": "Propaganda, payed post, in some interests"
+  }
+}
