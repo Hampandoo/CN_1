@@ -4,11 +4,6 @@
     "parseUrl": "/news/political.html",
     "parserName": "interfax"
   },
-  "gordonua": {
-    "url": "https://english.gordonua.com",
-    "parseUrl": "/ukr/news.html",
-    "parserName": "gordonua"
-  },
   "ap": {
     "url": "https://apnews.com",
     "parseUrl": "/politics",

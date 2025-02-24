@@ -9,7 +9,7 @@ from ..utils.helpers import get_site_config, transform_date_to_milliseconds
 
 class NewsService:
   def __init__(self):
-    self.config = get_site_config("ap")
+    self.config = get_site_config("interfax")
     self.parserService = ParserService(self.config)
     self.parser = self.parserService.parser
 

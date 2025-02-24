@@ -13,15 +13,15 @@ class InterfaxParser(BaseParser):
       'date': ['article-time', 'span']
     }
   
-  def get_links(self, parserService):
+  def get_links(self, last_date):
     html = self.fetch_html()
     soup = self.parse_html(html)
 
     articles = soup.find('div', class_='articles-section-view')
     new_articles = []
 
-    last_date = parserService.get_last_date()
-    last_date = transform_date_to_milliseconds(last_date)
+    if last_date != 0:
+      last_date = transform_date_to_milliseconds(last_date)
 
     for article in articles.find_all('div', class_='grid article'):
       time_block = article.find('div', class_='article-time')

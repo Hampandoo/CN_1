@@ -27,6 +27,8 @@ def delete_all_data(db: Session):
 
 def read_last_date(db:Session, site_name: str):
   record = db.query(LastDateModel).filter(LastDateModel.site_name == site_name).first()
+  if record == None:
+    return 0
   return record.last_date
 
 def update_last_date(db: Session, site_name: str, date: str):

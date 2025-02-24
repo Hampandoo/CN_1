@@ -17,12 +17,19 @@ class NewsService:
     last_date = read_last_date(SessionLocal())
     last_date = transform_date_to_milliseconds(last_date)
 
-    data.news.sort(key=lambda x: transform_date_to_milliseconds(x.date))
+    try:
+      data.news.sort(key=lambda x: x.date)
+    except ValueError as e:
+      print(e)
+      print('data error')
 
     for item in data.news:
-      date_to_check = transform_date_to_milliseconds(item.date)
+      try:
+        date_to_check = transform_date_to_milliseconds(item.date)
+      except ValueError as e:
+        date_to_check = item.date
 
-      if last_date >= date_to_check:
+      if float(last_date) >= float(date_to_check):
         continue
 
       translated_text = translate_service.transate_text(item.content)
